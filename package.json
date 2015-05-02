@@ -1,0 +1,7 @@
+{
+  "name": "Spice",
+  "verison": "0.1",
+  "dependencies": {
+    "config": "1.12.0"
+  }
+}
