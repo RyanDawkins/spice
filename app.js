@@ -8,12 +8,12 @@ var routes = require('');
 var port = config.server.port;
 var host = config.server.host;
 
-http.createServer(function (req, res) {
+http.createServer(function receive(req, res) {
 
   var urlData = url.parse(req.url);
   console.log("Request to: "+urlData.pathname);
 
-  entry.getPathCallback(req.method, urlData.pathname);
+  entry.getPathCallback(req.method, urlData.pathname)(www.getWriter());
 
 }).listen(port, host);
 
