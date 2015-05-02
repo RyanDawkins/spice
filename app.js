@@ -10,10 +10,10 @@ var host = config.server.host;
 
 http.createServer(function (req, res) {
 
-  var url_data = url.parse(req.url);
-  console.log("Request to: "+url_data.pathname);
+  var urlData = url.parse(req.url);
+  console.log("Request to: "+urlData.pathname);
 
-  entry.get_path_callback(req.method, url_data.pathname);
+  entry.getPathCallback(req.method, urlData.pathname);
 
 }).listen(port, host);
 
